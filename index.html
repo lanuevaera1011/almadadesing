@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almada Desing - Diseño Gráfico Freelance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Ocultar barra de scroll para el contenedor de testimonios pero mantener funcionalidad */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-slate-100 transition-all">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex flex-col">
+                <a href="#" class="text-2xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-indigo-600 to-purple-600 drop-shadow-sm">
+                    Almada Desing
+                </a>
+                <span class="text-xs font-medium text-slate-500 tracking-wide">Diseño estratégico para marcas en evolución</span>
+            </div>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#empresa" class="hover:text-brand-600 transition-colors">La Empresa</a>
+                <a href="#servicios" class="hover:text-brand-600 transition-colors">Servicios</a>
+                <a href="#trayectoria" class="hover:text-brand-600 transition-colors">Trayectoria</a>
+                <a href="#soporte" class="hover:text-brand-600 transition-colors">Atención y Soporte</a>
+                <a href="#testimonios" class="hover:text-brand-600 transition-colors">Testimonios</a>
+                <a href="#contacto" class="px-4 py-2 rounded-full bg-slate-900 text-white font-medium hover:bg-brand-600 transition-all shadow-sm">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="relative py-24 md:py-32 overflow-hidden bg-gradient-to-b from-slate-50 to-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6">
+                Potenciamos la identidad de tu negocio con <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-indigo-600 drop-shadow-md">diseño de alto impacto</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Transformamos ideas abstractas en experiencias visuales memorables. Soluciones integrales de diseño gráfico freelance adaptadas al ritmo de emprendimientos y empresas exigentes.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contacto" class="px-8 py-4 rounded-full bg-brand-600 text-white font-semibold hover:bg-brand-500 transition-all shadow-lg shadow-brand-500/25">Iniciar un proyecto</a>
+                <a href="#servicios" class="px-8 py-4 rounded-full bg-slate-100 text-slate-700 font-semibold hover:bg-slate-200 transition-all">Explorar servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="empresa" class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-brand-900 to-slate-900 drop-shadow-sm mb-4">
+                    La Empresa
+                </h2>
+                <div class="w-16 h-1 bg-brand-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-slate-600 leading-relaxed">
+                    <h3 class="text-2xl font-bold text-slate-900">Fundamentos e Historia</h3>
+                    <p>
+                        Almada Desing nació con la premisa clara de democratizar el diseño de alta calidad para empresas y emprendedores. En un entorno digital hiperconectado, comprendemos que la primera impresión visual determina el éxito o el estancamiento de una iniciativa comercial. Por ello, consolidamos una estructura de trabajo flexible, ágil y profundamente comprometida con los resultados de nuestros clientes.
+                    </p>
+                    <p>
+                        Nuestro enfoque trasciende la mera creación estética: analizamos el mercado, la psicología del consumidor y los objetivos de negocio de cada aliado para desarrollar piezas visuales que no solo atraigan miradas, sino que generen conversiones tangibles y posicionamiento duradero.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 space-y-6 shadow-sm">
+                    <div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Misión</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Acompañar el desarrollo y crecimiento de empresas y emprendimientos mediante estrategias visuales innovadoras, soluciones de diseño accesibles y un acompañamiento constante que maximice su valor de marca.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-2">Nuestros Valores</h4>
+                        <ul class="text-sm text-slate-600 space-y-2">
+                            <li class="flex items-center"><span class="w-2 h-2 bg-brand-500 rounded-full mr-3"></span>Excelencia y precisión técnica en cada entregable.</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-brand-500 rounded-full mr-3"></span>Transparencia y comunicación directa sin intermediarios.</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-brand-500 rounded-full mr-3"></span>Innovación constante en herramientas y lenguajes visuales.</li>
+                            <li class="flex items-center"><span class="w-2 h-2 bg-brand-500 rounded-full mr-3"></span>Compromiso absoluto con los tiempos de entrega pactados.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-slate-900 mb-1">Ubicación Central</h4>
+                        <p class="text-sm text-slate-600">GUTENBERG 2822 Dpto:2 CIUDAD AUTONOMA BUENOS AIRES</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-indigo-600 drop-shadow-sm mb-4">
+                    Nuestros Servicios
+                </h2>
+                <p class="text-slate-600">Soluciones de diseño adaptadas a las necesidades específicas de tu proyecto.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">01</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Identidad Visual y Branding</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                        Construimos la personalidad visual completa de tu marca desde cero o renovamos marcas existentes para adaptarlas a los estándares contemporáneos.
+                    </p>
+                    <ul class="text-sm text-slate-500 space-y-2">
+                        <li class="flex items-center"><span class="text-brand-500 mr-2">✓</span> Diseño de logotipo principal y versiones secundarias</li>
+                        <li class="flex items-center"><span class="text-brand-500 mr-2">✓</span> Paleta de colores y tipografías corporativas</li>
+                        <li class="flex items-center"><span class="text-brand-500 mr-2">✓</span> Manual de uso de marca detallado</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">02</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Diseño para Redes Sociales</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                        Creamos contenido visual atractivo e hiper-enfocado en captar la atención en plataformas digitales, maximizando la interacción de la audiencia.
+                    </p>
+                    <ul class="text-sm text-slate-500 space-y-2">
+                        <li class="flex items-center"><span class="text-brand-500 mr-2">✓</span> Plantillas editables para posts e historias</li>
+                        <li class="flex items-center"><span class="text-brand-500 mr-2">✓</span> Banners publicitarios e imágenes de perfil</li>
+                        <li class="flex items-center"><span class="text-brand-500 mr-2">✓</span> Diseño de portadas y carruseles informativos</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">03</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Diseño Editorial y Papelería</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                        Desarrollamos material impreso y digital de carácter formal o promocional, cuidando cada detalle tipográfico y de maquetación.
+                    </p>
+                    <ul class="text-sm text-slate-500 space-y-2">
+                        <li class="flex items-center"><span class="text-brand-500 mr-2">✓</span> Tarjetas de presentación y hojas membretadas</li>
+                        <li class="flex items-center"><span class="text-brand-500 mr-2">✓</span> Folletos, catálogos e instructivos de productos</li>
+                        <li class="flex items-center"><span class="text-brand-500 mr-2">✓</span> Presentaciones corporativas digitales</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">04</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Diseño de Empaques y Etiquetas</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                        Creamos soluciones visuales físicas que destacan en las estanterías y transmiten la calidad superior de tu producto desde el empaque.
+                    </p>
+                    <ul class="text-sm text-slate-500 space-y-2">
+                        <li class="flex items-center"><span class="text-brand-500 mr-2">✓</span> Diseño de packaging personalizado</li>
+                        <li class="flex items-center"><span class="text-brand-500 mr-2">✓</span> Etiquetas para botellas, frascos y cajas</li>
+                        <li class="flex items-center"><span class="text-brand-500 mr-2">✓</span> Maquetas tridimensionales de previsualización</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all lg:col-span-1 md:col-span-2">
+                    <div class="w-12 h-12 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">05</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">UI/UX para Sitios Web y Apps</h3>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                        Concebimos interfaces intuitivas, elegantes y enfocadas en la usabilidad, garantizando que tus usuarios naveguen de forma fluida.
+                    </p>
+                    <ul class="text-sm text-slate-500 space-y-2">
+                        <li class="flex items-center"><span class="text-brand-500 mr-2">✓</span> Prototipado e interfaces web responsive</li>
+                        <li class="flex items-center"><span class="text-brand-500 mr-2">✓</span> Arquitectura de información y flujos de usuario</li>
+                        <li class="flex items-center"><span class="text-brand-500 mr-2">✓</span> Assets y guías de estilos para desarrolladores</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trayectoria" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-brand-900 drop-shadow-sm mb-4">
+                    Trayectoria y Evolución
+                </h2>
+                <p class="text-slate-600">Un recorrido basado en la perseverancia, la innovación constante y la confianza.</p>
+            </div>
+
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="md:w-1/4 font-extrabold text-brand-600 text-xl">1 de Enero de 2026</div>
+                    <div class="md:w-3/4 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Fundación e Inicios</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Almada Desing inicia oficialmente sus operaciones el 1 de enero de 2026 en Buenos Aires. Concebido como un estudio independiente de diseño gráfico freelance, el proyecto nació para cubrir la brecha entre el diseño profesional de alto nivel y la accesibilidad económica necesaria para emprendimientos emergentes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="md:w-1/4 font-extrabold text-brand-600 text-xl">Expansión Local</div>
+                    <div class="md:w-3/4 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Consolidación en el Mercado</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            A través de entregas rigurosas y un enfoque centrado totalmente en el cliente, ampliamos rápidamente nuestra cartera de servicios, atendiendo a diversos sectores comerciales dentro de la Ciudad Autónoma de Buenos Aires e incorporando clientes regionales de variados rubros gastronómicos, tecnológicos y comerciales.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="md:w-1/4 font-extrabold text-brand-600 text-xl">Hitos y Tecnología</div>
+                    <div class="md:w-3/4 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Integración de Herramientas de Vanguardia</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Logramos la adopción integral de plataformas de diseño asistido por inteligencia artificial y flujos de trabajo optimizados en la nube. Esto nos permitió reducir drásticamente los tiempos de revisión sin comprometer la originalidad ni la precisión estética de los proyectos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="md:w-1/4 font-extrabold text-brand-600 text-xl">Visión a Futuro</div>
+                    <div class="md:w-3/4 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Hacia la Internacionalización</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Nuestra proyección está enfocada en escalar la infraestructura de atención remota, fortaleciendo canales instantáneos de soporte y colaborando con empresas de habla hispana en todo el mundo, posicionando a Almada Desing como un referente indispensable en diseño freelance global.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="soporte" class="py-20 bg-brand-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-brand-500 text-sm font-bold tracking-widest uppercase">Atención de Primer Nivel</span>
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-white mt-2 mb-6 drop-shadow-md">
+                        Soporte Directo, Ágil e Inmediato
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        En Almada Desing entendemos que la comunicación fluida es el pilar de cualquier proyecto exitoso. Por ello, brindamos un servicio de soporte y atención al cliente excepcional, garantizando acompañamiento personalizado desde la toma de requerimientos hasta la entrega final y revisiones posteriores.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center font-bold text-xs mr-3 mt-1">✓</span>
+                            <div>
+                                <h4 class="font-semibold text-white">Canales Instantáneos</h4>
+                                <p class="text-xs text-slate-300">Atención rápida y personalizada a través de servicios de mensajería instantánea como WhatsApp y correo electrónico.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-6 h-6 rounded-full bg-brand-500 text-white flex items-center justify-center font-bold text-xs mr-3 mt-1">✓</span>
+                            <div>
+                                <h4 class="font-semibold text-white">Seguimiento en Tiempo Real</h4>
+                                <p class="text-xs text-slate-300">Respuestas a dudas y actualizaciones inmediatas sobre el avance de cada pieza de diseño contratada.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-sm">
+                    <h3 class="text-xl font-bold text-white mb-4">Compromiso de Respuesta</h3>
+                    <p class="text-sm text-slate-300 mb-6">
+                        Nuestra prioridad es mantener la transparencia total. Todas las consultas son atendidas por profesionales capacitados para resolver inquietudes técnicas y creativas sin demoras innecesarias.
+                    </p>
+                    <div class="p-4 bg-brand-600/30 rounded-2xl border border-brand-500/30">
+                        <p class="text-xs text-brand-100 font-medium">
+                            Garantizamos un estándar superior de atención al cliente para asegurar la satisfacción total en cada etapa de interacción.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-indigo-600 to-purple-600 drop-shadow-sm mb-4">
+                    Testimonios de Clientes
+                </h2>
+                <p class="text-slate-600">Lo que dicen las marcas que han trabajado con nosotros.</p>
+            </div>
+
+            <div class="flex overflow-x-auto space-x-6 pb-8 no-scrollbar snap-x snap-mandatory">
+                
+                <div class="min-w-[320px] md:min-w-[450px] bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between snap-center flex-shrink-0">
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                        "El nivel de atención y la calidad técnica del branding que realizaron para nuestra empresa superó nuestras expectativas. El soporte inmediato por mensajería hizo que el proyecto fluyera sin contratiempos."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Gómez" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Carlos Gómez</h4>
+                            <p class="text-xs text-slate-500">Director de Operaciones - Logística Norte</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min-w-[320px] md:min-w-[450px] bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between snap-center flex-shrink-0">
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                        "Diseñaron toda la presencia visual de nuestro emprendimiento en redes sociales. Captaron la esencia de la marca desde el primer borrador. Destaco enormemente su paciencia y excelente soporte."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Mariana Silva" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Mariana Silva</h4>
+                            <p class="text-xs text-slate-500">Fundadora - BioNutrición Orgánica</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min-w-[320px] md:min-w-[450px] bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between snap-center flex-shrink-0">
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                        "Un servicio impecable. Las etiquetas y el empaque que desarrollaron para nuestros productos aumentaron significativamente nuestras ventas en tiendas físicas. Totalmente recomendados."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Roberto Fernández" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Roberto Fernández</h4>
+                            <p class="text-xs text-slate-500">Gerente General - Cervecería Artesanal Sur</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min-w-[320px] md:min-w-[450px] bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between snap-center flex-shrink-0">
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                        "La rapidez de respuesta ante cualquier modificación o duda fue clave para cumplir con nuestros tiempos. El diseño de la interfaz web quedó moderno, limpio y muy fácil de usar."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Laura Martínez" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Laura Martínez</h4>
+                            <p class="text-xs text-slate-500">Líder de Producto - SoftTech Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="min-w-[320px] md:min-w-[450px] bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between snap-center flex-shrink-0">
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                        "Profesionalismo de principio a fin. Nos asesoraron en la definición de la propuesta gráfica para nuestro negocio y el resultado fue sobresaliente. Volveremos a trabajar con ellos sin duda."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Esteban Rossi" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Esteban Rossi</h4>
+                            <p class="text-xs text-slate-500">Socio Fundador - Urbana Arquitectura</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-brand-600 drop-shadow-sm mb-4">
+                    Contacto
+                </h2>
+                <p class="text-slate-600">Escríbenos para conversar sobre tu próximo proyecto o requerimiento de diseño.</p>
+            </div>
+
+            <form action="#" method="POST" class="space-y-6 bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100 shadow-sm">
+                <div>
+                    <label for="nombre" class="block text-sm font-semibold text-slate-700 mb-2">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre o el de tu empresa" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 bg-white text-slate-800 transition-all">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-semibold text-slate-700 mb-2">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 bg-white text-slate-800 transition-all">
+                </div>
+
+                <div>
+                    <label for="mensaje" class="block text-sm font-semibold text-slate-700 mb-2">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Detalla las necesidades de tu proyecto o consulta..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 bg-white text-slate-800 transition-all"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-4 rounded-xl bg-slate-900 text-white font-bold text-center hover:bg-brand-600 transition-all shadow-md">
+                    Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h3 class="text-white text-xl font-bold mb-2">Almada Desing</h3>
+                <p class="text-xs text-slate-400 mb-4">Servicios profesionales de diseño gráfico freelance para marcas en crecimiento.</p>
+                <div class="text-xs space-y-1">
+                    <p><strong class="text-slate-300">Nombre fiscal:</strong> Almada Desing</p>
+                    <p><strong class="text-slate-300">Dirección física:</strong> GUTENBERG 2822 Dpto:2 CIUDAD AUTONOMA BUENOS AIRES</p>
+                </div>
+            </div>
+
+            <div class="md:text-right text-xs space-y-2">
+                <p><strong class="text-slate-300">Correo Electrónico:</strong> <a href="mailto:contacto@almadadesing.website" class="hover:text-white transition-colors">contacto@almadadesing.website</a></p>
+                <p><strong class="text-slate-300">Teléfono:</strong> <a href="tel:+5492215919623" class="hover:text-white transition-colors">+5492215919623</a></p>
+                <p class="pt-4 text-slate-500">&copy; 2026 Almada Desing. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
